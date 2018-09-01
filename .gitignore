@@ -4,7 +4,11 @@ node_modules
 yarn-error.log
 
 # Build directory
+<<<<<<< HEAD
 #public/
+=======
+public/
+>>>>>>> 75d23bd864b411b5b54d51f7cca9e2660f96e77b
 .DS_Store
 
 
