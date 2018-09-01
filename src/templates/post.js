@@ -6,7 +6,7 @@ class PageTemplate extends Component {
     const currentPage = this.props.data.wordpressPage
 
     return (
- 
+		<p>PlaceHolder Text</p>
     )
   }
 }
