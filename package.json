@@ -21,7 +21,6 @@
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-postbuild": "npm run patch && gatsby build",
-	"start": "/public/index.html"
   },
   "devDependencies": {
     "prettier": "^1.13.7"
