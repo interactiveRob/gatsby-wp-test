@@ -21,8 +21,13 @@
       "path---home-e695aaaea1499a569311.js.map"
     ],
     "component---src-layouts-index-js": [
+<<<<<<< HEAD
       "component---src-layouts-index-js-1011780f2345049aa796.js",
       "component---src-layouts-index-js-1011780f2345049aa796.js.map"
+=======
+      "component---src-layouts-index-js-08e181f746787e2d4477.js",
+      "component---src-layouts-index-js-08e181f746787e2d4477.js.map"
+>>>>>>> d2f7fae804b2c74dae8c07c37f8ecd4d9f17159f
     ],
     "path---page-2": [
       "path---page-2-a0e39f21c11f6a62c5ab.js",
@@ -59,9 +64,15 @@
       "component---src-pages-page-2-js-075954cd9c4544c7dcd8.js.map"
     ],
     "app": [
+<<<<<<< HEAD
       "app-38a0834d4430125be8b8.js",
       "build-js-styles.css",
       "app-38a0834d4430125be8b8.js.map",
+=======
+      "app-f707704dddee467cd160.js",
+      "build-js-styles.css",
+      "app-f707704dddee467cd160.js.map",
+>>>>>>> d2f7fae804b2c74dae8c07c37f8ecd4d9f17159f
       "build-js-styles.css.map"
     ],
     "path---404": [
