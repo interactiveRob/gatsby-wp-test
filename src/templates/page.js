@@ -9,9 +9,7 @@ class PageTemplate extends Component {
         <h1 dangerouslySetInnerHTML={{ __html: currentPage.title }} />
         <div dangerouslySetInnerHTML={{ __html: currentPage.content }} />
         if(currentPage.acf !== null){
-	        if(currentPage.acf.hero_headline !== null){
 		        <h3>{currentPage.acf.hero_headline}</h3>	        
-	        }
 	    }    
       </div>
     )
