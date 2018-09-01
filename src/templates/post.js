@@ -6,11 +6,7 @@ class PageTemplate extends Component {
     const currentPage = this.props.data.wordpressPage
 
     return (
-      <Layout>
-        <h1 dangerouslySetInnerHTML={{ __html: currentPage.title }} />
-        <PostIcons node={currentPage} css={{ marginBottom: rhythm(1 / 2) }} />
-        <div dangerouslySetInnerHTML={{ __html: currentPage.content }} />
-      </Layout>
+ 
     )
   }
 }
