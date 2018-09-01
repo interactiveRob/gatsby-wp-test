@@ -26,5 +26,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "scripts": { 
+ 	"heroku-postbuild": "gatsby build",
+ 	"start": "gatsby serve"
+ 	} 
   }
 }
