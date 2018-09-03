@@ -25,14 +25,14 @@ app.post('/', function (req, res) {
 	res.send(`Build running`)	
 	
 	//build script
-	const testscript = exec('npm run patch & gatsby build & sftp-deploy');
+	const build_script = exec('npm run patch && gatsby build && sftp-deploy');
   
-	testscript.stdout.on('data', function(data){
+	build_script.stdout.on('data', function(data){
 	    console.log(data); 
 	    // sendBackInfo();
 	});
 	
-	testscript.stderr.on('data', function(data){
+	build_script.stderr.on('data', function(data){
 	    console.log(data);
 	    // triggerErrorStuff(); 
 	});	   
