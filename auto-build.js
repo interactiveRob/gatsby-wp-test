@@ -5,7 +5,11 @@ const app = express()
 const port = process.env.PORT || 3000;
 
 // Tell express to use the body-parser middleware and to not parse extended bodies
-app.use(bodyParser.json())
+app.configure(function(){
+  app.use(bodyParser.json());
+  app.use(app.router);
+});
+
 
 // Route that receives a POST request to /sms
 app.post('/', function (req, res) {
