@@ -3,12 +3,16 @@ const bodyParser = require('body-parser')
 // Create a new instance of express
 const app = express()
 const port = process.env.PORT || 3000;
-var exec = require('child_process').exec;
+const exec = require('child_process').exec;
+const cors = require('cors')
+
 
 
 // Tell express to use the body-parser middleware and to not parse extended bodies
 const json_body_parser = bodyParser.json();
 const urlencoded_body_parser = bodyParser.urlencoded({ extended: true });
+
+app.use(cors())
 app.use(json_body_parser);
 app.use(urlencoded_body_parser);
 
