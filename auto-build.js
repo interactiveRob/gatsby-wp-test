@@ -17,6 +17,9 @@ app.use(json_body_parser);
 app.use(urlencoded_body_parser);
 
 
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + '/public/index.html'));
+});
 
 // Route that receives a POST request to /sms
 app.post('/', function (req, res) {
