@@ -1,1 +1,1 @@
-node auto-build.js
+web: npm start -- --port ${PORT?}
