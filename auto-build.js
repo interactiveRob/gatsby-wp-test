@@ -5,7 +5,7 @@ const app = express()
 app.use(bodyParser.urlencoded({ extended: false }))
 
 // Route that receives a POST request to /sms
-app.post('/sms', function (req, res) {
+app.post('/', function (req, res) {
   const body = req.body.Body
   res.set('Content-Type', 'text/plain')
   res.send(`You sent: ${body} to Express`)
@@ -19,3 +19,4 @@ app.listen(3000, function (err) {
 
   console.log('Server started on port 3000')
 })
+console.log("i am here");
