@@ -3,7 +3,7 @@ const bodyParser = require('body-parser')
 // Create a new instance of express
 const app = express()
 const port = process.env.PORT || 3000;
-const exec = require('child_process').exec, child;
+var exec = require('child_process').exec;
 
 
 // Tell express to use the body-parser middleware and to not parse extended bodies
