@@ -14,7 +14,7 @@ app.use(urlencoded_body_parser);
 
 // Route that receives a POST request to /sms
 app.post('/', function (req, res) {
-  const body = req.body.Body
+  const body = req.body
   res.set('Content-Type', 'text/plain')
   res.send(`You sent: ${body} to Express`)
   console.log(`You sent: ${body} to Express`)
