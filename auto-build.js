@@ -5,10 +5,10 @@ const app = express()
 const port = process.env.PORT || 3000;
 
 // Tell express to use the body-parser middleware and to not parse extended bodies
-app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json)
 
 // Route that receives a POST request to /sms
-app.post('/public/', function (req, res) {
+app.post('/', function (req, res) {
   const body = req.body.Body
   res.set('Content-Type', 'text/plain')
   res.send(`You sent: ${body} to Express`)
