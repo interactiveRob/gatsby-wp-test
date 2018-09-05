@@ -4,7 +4,7 @@ import Intro from "../components/intro"
 
 class LandingPage extends Component {
 	componentDidMount() {
-	import './logic.js'
+		require('./logic.js')
 	}
 	
   render() {
