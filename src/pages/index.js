@@ -3,12 +3,11 @@ import Hero from "../components/hero"
 import Intro from "../components/intro"
 import LandingPage from "../templates/landing-page"
 import Link from 'gatsby-link'
+import Layout from "../layouts"
 
 
 const IndexPage = (data) => (
-  <div>
-  <LandingPage data={data.data}/>
-  </div>
+	  <LandingPage data={data.data}/>
  ) 
 export default IndexPage
 

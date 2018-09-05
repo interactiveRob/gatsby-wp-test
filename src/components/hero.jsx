@@ -1,6 +1,6 @@
 import React from 'react';
-import Motif from "../img/header-glow.png";
-import Motif2x from "../img/header-glow2x.png";
+import Motif from "../layouts/img/header-glow.png";
+import Motif2x from "../layouts/img/header-glow2x.png";
 
 let motifSrcSet = `${Motif} 1x, ${Motif2x} 2x`; 
 

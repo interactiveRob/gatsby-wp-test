@@ -1,60 +1,60 @@
 /* fonts */
 @font-face {
     font-family: 'abelle';
-    src: url('../fonts/AdelleThin.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/AdelleThin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/AdelleThin.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../fonts/AdelleThin.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/AdelleThin.svg#abelle') format('svg'); /* Legacy iOS */
+    src: url('./fonts/AdelleThin.eot'); /* IE9 Compat Modes */
+    src: url('./fonts/AdelleThin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/AdelleThin.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./fonts/AdelleThin.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/AdelleThin.svg#abelle') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
     font-family: 'benton-sans';
-    src: url('../fonts/benton-sans-light.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/benton-sans-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/benton-sans-light.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../fonts/benton-sans-light.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/benton-sans-light.svg#bentonSans') format('svg'); /* Legacy iOS */
+    src: url('./fonts/benton-sans-light.eot'); /* IE9 Compat Modes */
+    src: url('./fonts/benton-sans-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/benton-sans-light.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./fonts/benton-sans-light.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/benton-sans-light.svg#bentonSans') format('svg'); /* Legacy iOS */
     font-weight: 200;
 }
 
 @font-face {
     font-family: 'benton-sans';
-    src: url('../fonts/benton-sans-book.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/benton-sans-book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/benton-sans-book.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../fonts/benton-sans-book.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/benton-sans-book.svg#bentonSans') format('svg'); /* Legacy iOS */
+    src: url('./fonts/benton-sans-book.eot'); /* IE9 Compat Modes */
+    src: url('./fonts/benton-sans-book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/benton-sans-book.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./fonts/benton-sans-book.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/benton-sans-book.svg#bentonSans') format('svg'); /* Legacy iOS */
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'benton-sans';
-    src: url('../fonts/benton-sans-medium.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/benton-sans-medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/benton-sans-medium.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../fonts/benton-sans-medium.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/benton-sans-medium.svg#bentonSans') format('svg'); /* Legacy iOS */
+    src: url('./fonts/benton-sans-medium.eot'); /* IE9 Compat Modes */
+    src: url('./fonts/benton-sans-medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/benton-sans-medium.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./fonts/benton-sans-medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/benton-sans-medium.svg#bentonSans') format('svg'); /* Legacy iOS */
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'benton-sans';
-    src: url('../fonts/benton-sans-bold.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/benton-sans-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/benton-sans-bold.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../fonts/benton-sans-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/benton-sans-bold.svg#bentonSans') format('svg'); /* Legacy iOS */
+    src: url('./fonts/benton-sans-bold.eot'); /* IE9 Compat Modes */
+    src: url('./fonts/benton-sans-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/benton-sans-bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./fonts/benton-sans-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/benton-sans-bold.svg#bentonSans') format('svg'); /* Legacy iOS */
     font-weight: 600;
 }
 
 @font-face {
     font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/icomoon.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../fonts/icomoon.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/icomoon.svg#icomoon') format('svg'); /* Legacy iOS */
+    src: url('./fonts/icomoon.eot'); /* IE9 Compat Modes */
+    src: url('./fonts/icomoon.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/icomoon.woff') format('woff'), /* Pretty Modern Browsers */
+         url('./fonts/icomoon.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/icomoon.svg#icomoon') format('svg'); /* Legacy iOS */
 }
 
 /* variables */
@@ -155,7 +155,7 @@ li{
             width: 22px;
             height: 22px;
             transition: 0.3s;
-            background-image: url(../img/close.svg);
+            background-image: url(./img/close.svg);
             transform: rotate(45deg) translateY(-50%);
             transform-origin: top;
             background-size: contain;
@@ -280,8 +280,8 @@ li{
                     margin-bottom: 20px;
                 }
             }
-            &.pass .icon{background-image: url(../img/pass.svg)}
-            &.fail .icon{background-image: url(../img/fail.svg)}
+            &.pass .icon{background-image: url(./img/pass.svg)}
+            &.fail .icon{background-image: url(./img/fail.svg)}
             .explanation{
                 font-size: 14px;
                 color: #888;
@@ -366,7 +366,7 @@ button,.btn{
         div:nth-child(2){
             color:$blue;
         }
-        .question-mark{background-image: url(../img/blue-question.svg)}
+        .question-mark{background-image: url(./img/blue-question.svg)}
     }
 }
 .orange{
@@ -376,7 +376,7 @@ button,.btn{
         div:nth-child(2){
             color:$orange;
         }
-        .question-mark{background-image: url(../img/orange-question.svg)}
+        .question-mark{background-image: url(./img/orange-question.svg)}
     }
 }
 .green{
@@ -386,7 +386,7 @@ button,.btn{
         div:nth-child(2){
             color:$green;
         }
-        .question-mark{background-image: url(../img/green-question.svg)}
+        .question-mark{background-image: url(./img/green-question.svg)}
     }
 }
 section{
@@ -450,7 +450,7 @@ h3{
         @media(max-width: 900px){
             height: 100px;
         }
-        background-image: url(../img/wave.png);
+        background-image: url(./img/wave.png);
         background-size: 100% 100%;
     }
     &.blue{background: $blue-gradient}
@@ -482,7 +482,7 @@ nav{
             .logo{
                 height: 50px;
                 width: 170px;
-                background-image: url(../img/logo.png);
+                background-image: url(./img/logo.png);
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -515,7 +515,7 @@ header{
     line-height: 1;
     font-weight: 600;
     padding: 60px 0 90px 0;
-    background-image: url(../img/header.png);
+    background-image: url(./img/header.png);
     background-repeat: no-repeat;
     color:#fff;
     background-size: 105%;
@@ -586,7 +586,7 @@ header{
             height: 300px;
             background-size: contain;
             background-position: center;
-            background-image: url(../img/graph.png);
+            background-image: url(./img/graph.png);
             background-repeat: no-repeat;
         }
     }
@@ -611,7 +611,7 @@ header{
                     border-color: #ddd;
                 }
                 &::after{
-                    background-image: url(../img/closeB.svg);
+                    background-image: url(./img/closeB.svg);
                 }
             }
         }
@@ -692,9 +692,9 @@ header{
             @media(max-width: 900px){
                 margin-bottom:40px;
             }
-            &:nth-child(1) div:first-child{background-image: url(../img/st1.png)}
-            &:nth-child(2) div:first-child{background-image: url(../img/st2.png)}
-            &:nth-child(3) div:first-child{background-image: url(../img/st3.png)}
+            &:nth-child(1) div:first-child{background-image: url(./img/st1.png)}
+            &:nth-child(2) div:first-child{background-image: url(./img/st2.png)}
+            &:nth-child(3) div:first-child{background-image: url(./img/st3.png)}
             div:first-child{
                 width:250px;
                 margin:0 auto 20px auto;
@@ -847,21 +847,21 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
     header{
-        background-image: url(../img/header2x.png);
+        background-image: url(./img/header2x.png);
     }
     #blue2{
         .flex{
             >div:nth-child(2){
-                background-image: url(../img/graph2x.png);
+                background-image: url(./img/graph2x.png);
             }
         }
     }
     #green2{
         .container{
             .read{
-                &:nth-child(1) div:first-child{background-image: url(../img/st1-2x.png)}
-                &:nth-child(2) div:first-child{background-image: url(../img/st2-2x.png)}
-                &:nth-child(3) div:first-child{background-image: url(../img/st3-2x.png)}
+                &:nth-child(1) div:first-child{background-image: url(./img/st1-2x.png)}
+                &:nth-child(2) div:first-child{background-image: url(./img/st2-2x.png)}
+                &:nth-child(3) div:first-child{background-image: url(./img/st3-2x.png)}
             }
         }
     }

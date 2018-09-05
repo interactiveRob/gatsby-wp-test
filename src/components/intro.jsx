@@ -1,6 +1,6 @@
 import React from 'react';
-import blueSVG from "../img/blue1.svg";
-import circleDown from "../img/circle-down.svg";
+import blueSVG from "../layouts/img/blue1.svg";
+import circleDown from "../layouts/img/circle-down.svg";
 
 class Intro extends React.Component {
   render() {

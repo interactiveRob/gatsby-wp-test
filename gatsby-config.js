@@ -1,4 +1,5 @@
 module.exports = {
+pathPrefix: `/public`,
   siteMetadata: {
     title: 'Constellation | Power Upsell',
   },

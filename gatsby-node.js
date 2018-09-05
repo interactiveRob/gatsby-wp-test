@@ -8,62 +8,6 @@ const _ = require(`lodash`);
 const Promise = require(`bluebird`);
 const path = require(`path`);
 const slash = require(`slash`);
-//static front page
-/*
- graphql(
-   `
-     {
-       allWordpressPage {
-         edges {
-           node {
-             id
-             slug
-             status
-             template
-           }
-         }
-       }
-     }
-   `
- )
-   .then(result => {
-     if (result.errors) {
-       console.log(result.errors);
-       reject(result.errors);
-     }
-
-     // Create Page pages.
-     const pageTemplate = path.resolve("./src/templates/page.js");
-     // We want to create a detailed page for each
-     // page node. We'll just use the WordPress Slug for the slug.
-     // The Page ID is prefixed with 'PAGE_'
-     _.each(result.data.allWordpressPage.edges, edge => {
-       // Gatsby uses Redux to manage its internal state.
-       // Plugins and sites can use functions like "createPage"
-       // to interact with Gatsby.
-       let static_frontpage = true;
-       
-       if(static_frontpage){
-       	const page_id = "ca531a60-9d1d-5593-894d-8c0f9ffc55d7"
-       } 
-       else{
-         const page_id = edge.node.id
-       }
-       
-       createPage({
-         // Each page is required to have a `path` as well
-         // as a template component. The `context` is
-         // optional but is often necessary so the template
-         // can query data specific to each page.
-         path: `/${edge.node.slug}/`,
-         component: slash(pageTemplate),
-         context: {
-           id: "ca531a60-9d1d-5593-894d-8c0f9ffc55d7",
-         },
-       });
-     });
-*/
-     
      
 // Implement the Gatsby API “createPages”. This is
 // called after the Gatsby bootstrap is finished so you have
