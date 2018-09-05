@@ -3,6 +3,10 @@ import Hero from "../components/hero"
 import Intro from "../components/intro"
 
 class LandingPage extends Component {
+	componentDidMount() {
+	import './logic.js'
+	}
+	
   render() {
    const currentPage = this.props.data.wordpressPage
 	
