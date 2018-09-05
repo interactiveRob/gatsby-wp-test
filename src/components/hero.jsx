@@ -6,7 +6,8 @@ let motifSrcSet = `${Motif} 1x, ${Motif2x} 2x`;
 
 class Hero extends React.Component {
   render() {
-	 return(
+	 const data = this.props;
+	 return(		 
 	    <header>
 	        <div className="container">
 	            <div className="slide-right">In an uncertain market,</div>

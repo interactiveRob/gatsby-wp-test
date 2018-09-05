@@ -2,9 +2,10 @@ import React, { Component } from "react"
 import Hero from "../components/hero"
 import Intro from "../components/intro"
 
-class PageTemplate extends Component {
+class LandingPage extends Component {
   render() {
    const currentPage = this.props.data.wordpressPage
+	
 	let hero_headline = ''
 	
 	if(currentPage.acf !== null){
@@ -20,24 +21,4 @@ class PageTemplate extends Component {
   }
 } 
 
-export default PageTemplate
-
-export const pageQuery = graphql`
-  query currentPageQuery($id: String!){
-	wordpressPage(id: {eq: $id}) {
-      title
-      content
-      date(formatString: "MMMM DD, YYYY")
-      acf{
-	      hero_headline
-      }
-
-    }	  
-    site {
-      id
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
+export default LandingPage

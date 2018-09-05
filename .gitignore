@@ -105,6 +105,8 @@ wp-content/mysql.sql
 *.avi
 
 #additional ignored files
+.DS_Store
+*/.DS_Store
 .htaccess
 apple-touch-icon-precomposed.png
 apple-touch-icon.png
