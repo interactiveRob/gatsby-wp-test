@@ -1,15 +1,19 @@
 import React from 'react'
-import {Router, Route, hashHistory} from 'react-router'
 import Hero from "../components/hero"
 import Intro from "../components/intro"
 import LandingPage from "../templates/landing-page"
 
-const IndexPage = (data) => (		
-      <div>
-	    <LandingPage data={data.data}/> 
-       <pre>{JSON.stringify(data.data , null, 1)}</pre>
-      </div>
-)
+class IndexPage extends React.Component {
+	 render() {
+    const pageData = this.props.data
+	    return (
+	      <div>
+		    <LandingPage data={pageData}/> 
+	       <pre>{JSON.stringify(pageData , null, 1)}</pre>
+	      </div>
+	   )
+   }	   
+}
 
 export default IndexPage
 
