@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Constellation | Power Upsell',
   },
-  plugins: ['gatsby-plugin-react-helmet',
+  plugins: ['gatsby-plugin-sass', 'gatsby-plugin-react-helmet', 
 	  	{
 		  resolve: "gatsby-source-wordpress",
 		    options: {
