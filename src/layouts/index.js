@@ -1,8 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Header from '../components/header.jsx'
+import Header from '../components/header'
+
 import './style.scss'
+
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
@@ -12,8 +14,7 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header/>
-
+     <Header/> 
       {children()}
   </div>
 )

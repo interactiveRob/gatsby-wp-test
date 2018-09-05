@@ -2,19 +2,14 @@ import React from 'react'
 import Hero from "../components/hero"
 import Intro from "../components/intro"
 import LandingPage from "../templates/landing-page"
+import Link from 'gatsby-link'
 
-class IndexPage extends React.Component {
-	 render() {
-    const pageData = this.props.data
-	    return (
-	      <div>
-		    <LandingPage data={pageData}/> 
-	       <pre>{JSON.stringify(pageData , null, 1)}</pre>
-	      </div>
-	   )
-   }	   
-}
 
+const IndexPage = (data) => (
+  <div>
+  <LandingPage data={data.data}/>
+  </div>
+ ) 
 export default IndexPage
 
 //query specific static front page
