@@ -1,17 +1,21 @@
 import React, { Component } from "react"
+import Hero from "../components/hero"
+import Intro from "../components/intro"
 
 class PageTemplate extends Component {
   render() {
     const currentPage = this.props.data.wordpressPage
-
-    return (
+	let hero_headline = ''
+	
+	if(currentPage.acf !== null){
+		hero_headline = currentPage.acf.hero_headline
+	}
+	
+    return ( 
       <div>
-        <h1 dangerouslySetInnerHTML={{ __html: currentPage.title }} />
-        <div dangerouslySetInnerHTML={{ __html: currentPage.content }} />
-        
-        if(currentPage.acf !=== null){
-	        <h3>currentPage.acf.hero_headline </h3>	        
-        }
+    
+      	<Hero/>
+        <Intro/>
       </div>
     )
   }
@@ -21,7 +25,7 @@ export default PageTemplate
 
 export const pageQuery = graphql`
   query currentPageQuery($id: String!){
-	wordpressPage(id: { eq: $id }) {
+	wordpressPage(id: {eq: $id}) {
       title
       content
       date(formatString: "MMMM DD, YYYY")

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Line 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="button/orange/zoom" transform="translate(-130.000000, -13.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-5" transform="translate(131.000000, 14.000000)">
+                <path d="M7.10120403,10.2525907 L8.42993171,11.7474093 L0.664363839,18.6501363 L-0.664363839,17.1553177 L7.10120403,10.2525907 Z M8.42993171,11.7474093 L0.664363839,18.6501363 L-0.664363839,17.1553177 L7.10120403,10.2525907 L8.42993171,11.7474093 Z M12.5,12 C15.5375661,12 18,9.53756612 18,6.5 C18,3.46243388 15.5375661,1 12.5,1 C9.46243388,1 7,3.46243388 7,6.5 C7,9.53756612 9.46243388,12 12.5,12 Z M12.5,14 C8.35786438,14 5,10.6421356 5,6.5 C5,2.35786438 8.35786438,-1 12.5,-1 C16.6421356,-1 20,2.35786438 20,6.5 C20,10.6421356 16.6421356,14 12.5,14 Z" id="Line-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>
