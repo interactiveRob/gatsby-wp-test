@@ -3,8 +3,9 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Header from '../components/header.jsx'
 import './style.scss'
-import './logic.js'
-
+componentDidMount() {
+	import './logic.js'
+}
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
