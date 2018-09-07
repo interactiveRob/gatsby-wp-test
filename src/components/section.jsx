@@ -4,7 +4,7 @@ class Section extends React.Component {
   render() {
 	  return(
   	   <section id={this.props.id} className={this.props.color}>
-	     	<div className="container">
+	     	<div className= { "container " + this.props.containerType}>
 	        	   {this.props.children}
 	      </div>
 		</section>       		  
