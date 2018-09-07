@@ -1,60 +1,60 @@
 /* fonts */
 @font-face {
     font-family: 'abelle';
-    src: url('./fonts/AdelleThin.eot'); /* IE9 Compat Modes */
-    src: url('./fonts/AdelleThin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('./fonts/AdelleThin.woff') format('woff'), /* Pretty Modern Browsers */
-         url('./fonts/AdelleThin.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('./fonts/AdelleThin.svg#abelle') format('svg'); /* Legacy iOS */
+    src: url('../fonts/AdelleThin.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/AdelleThin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/AdelleThin.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/AdelleThin.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/AdelleThin.svg#abelle') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
     font-family: 'benton-sans';
-    src: url('./fonts/benton-sans-light.eot'); /* IE9 Compat Modes */
-    src: url('./fonts/benton-sans-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('./fonts/benton-sans-light.woff') format('woff'), /* Pretty Modern Browsers */
-         url('./fonts/benton-sans-light.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('./fonts/benton-sans-light.svg#bentonSans') format('svg'); /* Legacy iOS */
+    src: url('../fonts/benton-sans-light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/benton-sans-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/benton-sans-light.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/benton-sans-light.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/benton-sans-light.svg#bentonSans') format('svg'); /* Legacy iOS */
     font-weight: 200;
 }
 
 @font-face {
     font-family: 'benton-sans';
-    src: url('./fonts/benton-sans-book.eot'); /* IE9 Compat Modes */
-    src: url('./fonts/benton-sans-book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('./fonts/benton-sans-book.woff') format('woff'), /* Pretty Modern Browsers */
-         url('./fonts/benton-sans-book.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('./fonts/benton-sans-book.svg#bentonSans') format('svg'); /* Legacy iOS */
+    src: url('../fonts/benton-sans-book.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/benton-sans-book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/benton-sans-book.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/benton-sans-book.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/benton-sans-book.svg#bentonSans') format('svg'); /* Legacy iOS */
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'benton-sans';
-    src: url('./fonts/benton-sans-medium.eot'); /* IE9 Compat Modes */
-    src: url('./fonts/benton-sans-medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('./fonts/benton-sans-medium.woff') format('woff'), /* Pretty Modern Browsers */
-         url('./fonts/benton-sans-medium.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('./fonts/benton-sans-medium.svg#bentonSans') format('svg'); /* Legacy iOS */
+    src: url('../fonts/benton-sans-medium.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/benton-sans-medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/benton-sans-medium.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/benton-sans-medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/benton-sans-medium.svg#bentonSans') format('svg'); /* Legacy iOS */
     font-weight: 500;
 }
 
 @font-face {
     font-family: 'benton-sans';
-    src: url('./fonts/benton-sans-bold.eot'); /* IE9 Compat Modes */
-    src: url('./fonts/benton-sans-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('./fonts/benton-sans-bold.woff') format('woff'), /* Pretty Modern Browsers */
-         url('./fonts/benton-sans-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('./fonts/benton-sans-bold.svg#bentonSans') format('svg'); /* Legacy iOS */
+    src: url('../fonts/benton-sans-bold.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/benton-sans-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/benton-sans-bold.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/benton-sans-bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/benton-sans-bold.svg#bentonSans') format('svg'); /* Legacy iOS */
     font-weight: 600;
 }
 
 @font-face {
     font-family: 'icomoon';
-    src: url('./fonts/icomoon.eot'); /* IE9 Compat Modes */
-    src: url('./fonts/icomoon.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('./fonts/icomoon.woff') format('woff'), /* Pretty Modern Browsers */
-         url('./fonts/icomoon.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('./fonts/icomoon.svg#icomoon') format('svg'); /* Legacy iOS */
+    src: url('../fonts/icomoon.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/icomoon.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/icomoon.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/icomoon.svg#icomoon') format('svg'); /* Legacy iOS */
 }
 
 /* variables */
@@ -107,9 +107,9 @@ li{
 .container{
     max-width: 1100px;
     margin:0 auto;
-    padding: 0 2vmin;
+    padding: 0 50px;
     @media(max-width: 900px){
-        padding: 0 20px;
+        padding: 0 25px;
     }
 }
 .flex{
@@ -125,8 +125,9 @@ li{
     width: 500px;
     max-width: 98%;
     @media(max-width: 900px){
-        align-self: flex-start;
+        align-self: center;
         margin-bottom: 30px;
+
     }}
 .accordion{
     .title{
@@ -155,7 +156,7 @@ li{
             width: 22px;
             height: 22px;
             transition: 0.3s;
-            background-image: url(./img/close.svg);
+            background-image: url(../img/close.svg);
             transform: rotate(45deg) translateY(-50%);
             transform-origin: top;
             background-size: contain;
@@ -165,11 +166,16 @@ li{
     }
     .data{
         overflow: hidden;
-        transition: 0.4s;
-        font-size: 0;
-        padding: 0;
+
+        font-size: 16px;
+        padding: 0px 0;
+        color: #808080;
         line-height: 1.4;
         letter-spacing: 0.3px;
+        max-height: 0px;
+        transition: 0.7s;
+        opacity: 20;
+
     }
     &.open{
         .title{
@@ -182,6 +188,10 @@ li{
             font-size: 16px;
             padding: 8px 0;
             color: #808080;
+            max-height: 300px;
+            transition: 0.7s;
+            opacity: 100;
+
         }
     }
 }
@@ -200,7 +210,7 @@ li{
     .test-title{
         display: flex;
         align-items: center;
-        padding-left: 30px;
+        padding-right: 30px;
         @media(max-width: 900px){
             margin-bottom: 30px;
             padding-left: 0;
@@ -215,7 +225,7 @@ li{
             @media(max-width: 900px){
                 width:75px;
                 height: 75px;
-                margin-right: 0;
+                margin-right: 10px;
             }
         }
         div:nth-child(2){
@@ -280,8 +290,8 @@ li{
                     margin-bottom: 20px;
                 }
             }
-            &.pass .icon{background-image: url(./img/pass.svg)}
-            &.fail .icon{background-image: url(./img/fail.svg)}
+            &.pass .icon{background-image: url(../img/pass.svg)}
+            &.fail .icon{background-image: url(../img/fail.svg)}
             .explanation{
                 font-size: 14px;
                 color: #888;
@@ -319,8 +329,12 @@ li{
         justify-content: center;
         align-items: center;
         img{
+          margin-top: 80px;
             max-height: 50vh;
             margin-bottom: 30px;
+            @media(max-width: 900px){
+              width: 100%;
+            }
         }
         .data{
             color: #888;
@@ -338,6 +352,7 @@ li{
     padding-right: 5vw;
     max-width: 500px;
     font-weight: 200;
+    padding-bottom: 30px;
 }
 button,.btn{
     color:#fff;
@@ -366,7 +381,7 @@ button,.btn{
         div:nth-child(2){
             color:$blue;
         }
-        .question-mark{background-image: url(./img/blue-question.svg)}
+        .question-mark{background-image: url(../img/blue-question.svg)}
     }
 }
 .orange{
@@ -376,7 +391,7 @@ button,.btn{
         div:nth-child(2){
             color:$orange;
         }
-        .question-mark{background-image: url(./img/orange-question.svg)}
+        .question-mark{background-image: url(../img/orange-question.svg)}
     }
 }
 .green{
@@ -386,7 +401,7 @@ button,.btn{
         div:nth-child(2){
             color:$green;
         }
-        .question-mark{background-image: url(./img/green-question.svg)}
+        .question-mark{background-image: url(../img/green-question.svg)}
     }
 }
 section{
@@ -397,7 +412,8 @@ h2{
     font-size: 2vw;
     font-weight: 600;
     @media(max-width: 900px){
-        font-size: 24px;
+        font-size: 30px;
+        text-align: center;
     }
 }
 h3{
@@ -450,7 +466,7 @@ h3{
         @media(max-width: 900px){
             height: 100px;
         }
-        background-image: url(./img/wave.png);
+        background-image: url(../img/wave.png);
         background-size: 100% 100%;
     }
     &.blue{background: $blue-gradient}
@@ -475,18 +491,20 @@ nav{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 8px 0;
+        padding: 8px 60px;
+
         .left{
             display: flex;
             align-items: center;
             .logo{
                 height: 50px;
                 width: 170px;
-                background-image: url(./img/logo.png);
+                background-image: url(../img/logo.png);
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center;
                 margin-right: 5vw;
+
             }
             .choice{
                 font-weight: 500;
@@ -498,11 +516,16 @@ nav{
             }
         }
         .right{
+
             button{background-color: $blue}
             @media(max-width: 900px){
                 display:none;
             }
         }
+        @media(max-width: 900px){
+            padding: 8px 25px;
+        }
+
     }
 }
 
@@ -515,18 +538,19 @@ header{
     line-height: 1;
     font-weight: 600;
     padding: 60px 0 90px 0;
-    background-image: url(./img/header.png);
+    background-image: url(../img/header.png);
     background-repeat: no-repeat;
     color:#fff;
     background-size: 105%;
     background-position: center;
     @media(max-width: 900px){
-        font-size: 30px;
+        font-size: 24px;
         background-size: cover;
     }
     .container{
-        div{position: relative; 
-	        max-width: 550px;
+        overflow: hidden;
+        div{position: relative;
+	        max-width: 570px;
         }
         div:nth-child(1){left:10%;}
         div:nth-child(3){
@@ -562,6 +586,7 @@ header{
 
         @media(max-width: 900px){
             flex-direction: column-reverse;
+
         }
         >div{
             width:40%;
@@ -586,7 +611,7 @@ header{
             height: 300px;
             background-size: contain;
             background-position: center;
-            background-image: url(./img/graph.png);
+            background-image: url(../img/graph.png);
             background-repeat: no-repeat;
         }
     }
@@ -602,6 +627,10 @@ header{
             max-width: 100%;
             font-weight: 200;
             margin-top: 15px;
+            @media(max-width: 900px){
+                margin-bottom:40px;
+            }
+
         }
         .accordion{
             .title{
@@ -611,7 +640,7 @@ header{
                     border-color: #ddd;
                 }
                 &::after{
-                    background-image: url(./img/closeB.svg);
+                    background-image: url(../img/closeB.svg);
                 }
             }
         }
@@ -658,11 +687,20 @@ header{
     }
 }
 
+#green2 {
+
+margin-bottom: 20px;
+
+}
+
 #green2{
+
+
     .container{
         .images{
             text-align: center;
             margin-bottom: 30px;
+            padding-top: 40px;
         }
         .text{
             font-size:18px;
@@ -692,9 +730,9 @@ header{
             @media(max-width: 900px){
                 margin-bottom:40px;
             }
-            &:nth-child(1) div:first-child{background-image: url(./img/st1.png)}
-            &:nth-child(2) div:first-child{background-image: url(./img/st2.png)}
-            &:nth-child(3) div:first-child{background-image: url(./img/st3.png)}
+            &:nth-child(1) div:first-child{background-image: url(../img/st1.png)}
+            &:nth-child(2) div:first-child{background-image: url(../img/st2.png)}
+            &:nth-child(3) div:first-child{background-image: url(../img/st3.png)}
             div:first-child{
                 width:250px;
                 margin:0 auto 20px auto;
@@ -731,6 +769,9 @@ header{
         letter-spacing: 0.5px;
         margin-bottom: 40px;
         padding: 0 10px;
+        @media(max-width: 900px){
+            font-size: 20px;
+        }
     }
     .solution{
         border-radius: 7px;
@@ -744,7 +785,8 @@ header{
         }
         h2{
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
+            margin-top: 10px;
             font-size: 28px;
         }
         a{
@@ -769,12 +811,18 @@ header{
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: space-between;
-                padding-right: 30px;@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                padding-right: 50px;
+                @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
                     /* IE10+ CSS styles go here */
                     display: inline-block;
-                    width: 48%;
+                    width: 30%;
                     vertical-align: top;
+
                 }
+                @media(max-width: 900px){
+                      padding-right: 0px;
+                }
+
                 div{
                     margin-bottom: 30px;
                 }
@@ -786,6 +834,13 @@ header{
                 }
             }
         }
+
+        div:nth-child(3) {
+          margin-top: 60px;
+          margin-bottom: 20px;
+        }
+
+
         &.blue-solution{
             background: $blue-gradient;
         }
@@ -807,6 +862,7 @@ header{
             max-width: 450px;
             color: rgba($color: #fff, $alpha: 0.8);
             margin: 0 auto 25px auto;
+            padding: 25px;
         }
         button{
             background-color: #fff;
@@ -815,6 +871,8 @@ header{
         }
     }
 }
+
+
 
 footer{
     padding: 25px 0 25px 0;
@@ -847,21 +905,21 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
     header{
-        background-image: url(./img/header2x.png);
+        background-image: url(../img/header2x.png);
     }
     #blue2{
         .flex{
             >div:nth-child(2){
-                background-image: url(./img/graph2x.png);
+                background-image: url(../img/graph2x.png);
             }
         }
     }
     #green2{
         .container{
             .read{
-                &:nth-child(1) div:first-child{background-image: url(./img/st1-2x.png)}
-                &:nth-child(2) div:first-child{background-image: url(./img/st2-2x.png)}
-                &:nth-child(3) div:first-child{background-image: url(./img/st3-2x.png)}
+                &:nth-child(1) div:first-child{background-image: url(../img/st1-2x.png)}
+                &:nth-child(2) div:first-child{background-image: url(../img/st2-2x.png)}
+                &:nth-child(3) div:first-child{background-image: url(../img/st3-2x.png)}
             }
         }
     }

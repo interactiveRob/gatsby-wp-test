@@ -2,7 +2,6 @@ import React from 'react'
 import Hero from "../components/hero"
 import Intro from "../components/intro"
 import LandingPage from "../templates/landing-page"
-import Link from 'gatsby-link'
 import Layout from "../layouts"
 
 
@@ -21,11 +20,5 @@ query staticFrontPage($frontpage_id: Int = 5){
 			hero_headline
 		}    
    }
-	site {
-		id
-		siteMetadata {
-		  title
-		}
-	}
 }
 `
