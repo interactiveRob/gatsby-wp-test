@@ -33,7 +33,7 @@ app.post('/', function (req, res) {
 	res.send(`Build running`)	
 	
 	//build script
-	const build_script = exec('npm run patch && gatsby build && sftp-deploy');
+	const build_script = exec('npm run patch && gatsby build --prefix-paths && sftp-deploy');
   
 	build_script.stdout.on('data', function(data){
 	    console.log(data); 
