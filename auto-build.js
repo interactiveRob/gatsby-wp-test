@@ -23,10 +23,35 @@ app.get('/', function(req, res) {
 });
 
 //Intialize build_script here so it runs whenever the server starts (wakes up from sleep mode). 
-function build_script(){
+function build_script(callback){
+	//run build scripts 
 	exec('npm run patch && gatsby build --prefix-paths && sftp-deploy');
+	const https = require('https');
+	
+	callback();
 } 
-build_script();
+
+build_script(cache_clear());
+
+function cache_clear(){
+	//clears WP-engine cache
+	https.get('https://admin.constellationpowercertainty.com/?wpe-cache-flush=$private_key', (resp) => {
+	  let data = '';
+	
+	  // A chunk of data has been recieved.
+	  resp.on('data', (chunk) => {
+	    data += chunk;
+	  });
+	
+	  // The whole response has been received. Print out the result.
+	  resp.on('end', () => {
+	    console.log(JSON.parse(data).explanation);
+	  });
+	
+	}).on("error", (err) => {
+	  console.log("Error: " + err.message);
+	});
+}
 
 // Route that receives a POST request to /sms
 app.post('/', function (req, res) {
@@ -38,7 +63,7 @@ app.post('/', function (req, res) {
 	res.set('Content-Type', 'text/plain')
 	res.send(`Build running`)	
 	
-	const build_script = exec('npm run patch && gatsby build --prefix-paths && sftp-deploy');
+	const build_script = build_script(cache_clear());
 	build_script.stdout.on('data', function(data){
 	    console.log(data); 
 	});
@@ -46,6 +71,7 @@ app.post('/', function (req, res) {
 	build_script.stderr.on('data', function(data){
 	    console.log(data);
 	});	   
+	
   }
   else{
 	'FAIL build not running'
