@@ -28,11 +28,9 @@ function build_script(callback){
 	callback();
 } 
 
-build_script(cache_clear);
-
 function cache_clear(){
 	//clears WP-engine cache
-	https.get('https://admin.constellationpowercertainty.com/?wpe-cache-flush=$private_key', (resp) => {
+	https.get('https://admin.constellationpowercertainty.com/?wpe-cache-flush=' + process.env.CACHE_KEY, (resp) => {
 	  let data = '';
 	
 	  // A chunk of data has been recieved.
@@ -50,8 +48,10 @@ function cache_clear(){
 	});
 }
 
+const build_script = build_script(cache_clear);
+
 // Route that receives a POST request to /sms
-app.post('/', function (req, res) {
+app.post('/', function (req, res, build_script) {
   const body = req.body
   let build = body.data.build
   console.log(`You sent: ${body} to Express`)
@@ -60,7 +60,6 @@ app.post('/', function (req, res) {
 	res.set('Content-Type', 'text/plain')
 	res.send(`Build running`)	
 	
-	const build_script = build_script(cache_clear);
 	build_script.stdout.on('data', function(data){
 	    console.log(data); 
 	});
