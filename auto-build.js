@@ -24,7 +24,7 @@ app.get('/', function(req, res) {
 //run build scripts 
 function build_app(){
 	
-	let build_script = exec('npm run patch && gatsby build --prefix-paths && sftp-deploy && clear-cache');
+	let build_script = exec('npm run patch && gatsby build --prefix-paths && sftp-deploy && npm run clear-cache');
 	
 	build_script.stdout.on('data', function(data){
 	    console.log(data); 
