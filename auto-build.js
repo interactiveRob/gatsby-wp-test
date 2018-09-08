@@ -22,8 +22,11 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/public/index.html'));
 });
 
-//Assign build_script here so it runs whenever the server starts (wakes up from sleep mode). 
-const build_script = exec('npm run patch && gatsby build --prefix-paths && sftp-deploy');
+//Intialize build_script here so it runs whenever the server starts (wakes up from sleep mode). 
+function build_script(){
+	exec('npm run patch && gatsby build --prefix-paths && sftp-deploy');
+} 
+build_script();
 
 // Route that receives a POST request to /sms
 app.post('/', function (req, res) {
