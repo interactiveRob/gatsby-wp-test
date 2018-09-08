@@ -22,11 +22,9 @@ app.get('/', function(req, res) {
 });
 
 //Intialize build_script here so it runs whenever the server starts (wakes up from sleep mode). 
-function build_script({
-	//run build scripts 
+//run build scripts 
+function build_script(callback){
 	exec('npm run patch && gatsby build --prefix-paths && sftp-deploy');
-	const https = require('https');
-	
 	callback();
 } 
 
