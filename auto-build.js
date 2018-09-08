@@ -22,6 +22,9 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/public/index.html'));
 });
 
+//Assign build_script here so it runs whenever the server starts (wakes up from sleep mode). 
+const build_script = exec('npm run patch && gatsby build --prefix-paths && sftp-deploy');
+
 // Route that receives a POST request to /sms
 app.post('/', function (req, res) {
   const body = req.body
@@ -32,17 +35,13 @@ app.post('/', function (req, res) {
 	res.set('Content-Type', 'text/plain')
 	res.send(`Build running`)	
 	
-	//build script
-	const build_script = exec('npm run patch && gatsby build --prefix-paths && sftp-deploy');
-  
+	build_script();
 	build_script.stdout.on('data', function(data){
 	    console.log(data); 
-	    // sendBackInfo();
 	});
 	
 	build_script.stderr.on('data', function(data){
 	    console.log(data);
-	    // triggerErrorStuff(); 
 	});	   
   }
   else{
@@ -52,6 +51,7 @@ app.post('/', function (req, res) {
 
 // Tell our app to listen on port 3000
 app.listen(port, function (err) {
+
   if (err) {
     throw err
   }
