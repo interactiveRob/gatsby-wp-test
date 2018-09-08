@@ -6,7 +6,6 @@ const port = process.env.PORT || 3000;
 const exec = require('child_process').exec;
 const cors = require('cors')
 const path = require('path');
-const https = require('https');
 
 // Tell express to use the body-parser middleware and to not parse extended bodies
 const json_body_parser = bodyParser.json();
@@ -23,9 +22,9 @@ app.get('/', function(req, res) {
 
 //Intialize build_script here so it runs whenever the server starts (wakes up from sleep mode). 
 //run build scripts 
-function build_app(callback){
+function build_app(){
 	
-	let build_script = exec('npm run patch && gatsby build --prefix-paths && sftp-deploy');
+	let build_script = exec('npm run patch && gatsby build --prefix-paths && sftp-deploy && clear-cache');
 	
 	build_script.stdout.on('data', function(data){
 	    console.log(data); 
@@ -35,30 +34,7 @@ function build_app(callback){
 	    console.log(data);
 	});	   
 	
-	callback();
 } 
-
-function cache_clear(){
-	//clears WP-engine cache
-	https.get('https://admin.constellationpowercertainty.com/?wpe-cache-flush=' + process.env.CACHE_KEY, (resp) => {
-	  let data = '';
-	
-	  // A chunk of data has been recieved.
-	  resp.on('data', (chunk) => {
-	    data += chunk;
-	  });
-	
-	  // The whole response has been received. Print out the result.
-	  resp.on('end', () => {
-	    console.log('cache_clear: ' + data);
-	  });
-	
-	}).on("error", (err) => {
-	  console.log("Error: " + err.message);
-	});
-}
-
-build_app(cache_clear);
 
 // Route that receives a POST request to /sms
 app.post('/', function (req, res) {
@@ -69,7 +45,7 @@ app.post('/', function (req, res) {
   if(build == 'go'){
 	res.set('Content-Type', 'text/plain')
 	res.send(`Build running`)	
-	build_app(cache_clear);	
+	build_app();	
   }
   else{
 	'FAIL build not running'

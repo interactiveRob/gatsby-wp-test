@@ -29,7 +29,8 @@
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-postbuild": "npm run patch && gatsby build --prefix-paths && sftp-deploy",
-    "start": "node auto-build.js"
+    "start": "node auto-build.js", 
+    "clear-cache": "node clear-cache.js",
   },
   "devDependencies": {
     "prettier": "^1.13.7"
