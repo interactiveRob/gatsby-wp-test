@@ -28,7 +28,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "npm run patch && gatsby build --prefix-paths && sftp-deploy",
+    "heroku-postbuild": "npm run patch && gatsby build --prefix-paths && sftp-deploy && npm run clear-cache",
     "start": "node auto-build.js", 
     "clear-cache": "node clear-cache.js"
   },
