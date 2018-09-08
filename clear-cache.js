@@ -18,4 +18,7 @@ function cache_clear(){
 	  console.log("Error: " + err.message);
 	});
 }
-cache_clear();
+
+setTimeout(function(){
+	cache_clear();
+}, 10000);
