@@ -23,7 +23,7 @@ app.get('/', function(req, res) {
 
 //Intialize build_script here so it runs whenever the server starts (wakes up from sleep mode). 
 //run build scripts 
-function build_script(callback){
+function build_app(callback){
 	exec('npm run patch && gatsby build --prefix-paths && sftp-deploy');
 	callback();
 } 
@@ -48,7 +48,7 @@ function cache_clear(){
 	});
 }
 
-const build_script = build_script(cache_clear);
+const build_script = build_app(cache_clear);
 
 // Route that receives a POST request to /sms
 app.post('/', function (req, res, build_script) {
