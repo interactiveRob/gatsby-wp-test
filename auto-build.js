@@ -42,7 +42,7 @@ function cache_clear(){
 	
 	  // The whole response has been received. Print out the result.
 	  resp.on('end', () => {
-	    console.log(JSON.parse(data).explanation);
+	    console.log('cache_clear: ' + data);
 	  });
 	
 	}).on("error", (err) => {
