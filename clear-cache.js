@@ -21,4 +21,4 @@ function cache_clear(){
 
 setTimeout(function(){
 	cache_clear();
-}, 10000);
+}, 5000);
