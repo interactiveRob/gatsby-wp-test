@@ -48,10 +48,10 @@ function cache_clear(){
 	});
 }
 
-const build_script = build_app(cache_clear);
+build_app(cache_clear);
 
 // Route that receives a POST request to /sms
-app.post('/', function (req, res, build_script) {
+app.post('/', function (req, res) {
   const body = req.body
   let build = body.data.build
   console.log(`You sent: ${body} to Express`)
@@ -59,7 +59,8 @@ app.post('/', function (req, res, build_script) {
   if(build == 'go'){
 	res.set('Content-Type', 'text/plain')
 	res.send(`Build running`)	
-	
+
+	const build_script = build_app(cache_clear);
 	build_script.stdout.on('data', function(data){
 	    console.log(data); 
 	});
