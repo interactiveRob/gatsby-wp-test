@@ -22,7 +22,7 @@ app.get('/', function(req, res) {
 });
 
 //Intialize build_script here so it runs whenever the server starts (wakes up from sleep mode). 
-function build_script(callback){
+function build_script({
 	//run build scripts 
 	exec('npm run patch && gatsby build --prefix-paths && sftp-deploy');
 	const https = require('https');
@@ -30,7 +30,7 @@ function build_script(callback){
 	callback();
 } 
 
-build_script(cache_clear());
+build_script(cache_clear);
 
 function cache_clear(){
 	//clears WP-engine cache
@@ -62,7 +62,7 @@ app.post('/', function (req, res) {
 	res.set('Content-Type', 'text/plain')
 	res.send(`Build running`)	
 	
-	const build_script = build_script(cache_clear());
+	const build_script = build_script(cache_clear);
 	build_script.stdout.on('data', function(data){
 	    console.log(data); 
 	});
