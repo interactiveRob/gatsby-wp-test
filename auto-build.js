@@ -24,7 +24,17 @@ app.get('/', function(req, res) {
 //Intialize build_script here so it runs whenever the server starts (wakes up from sleep mode). 
 //run build scripts 
 function build_app(callback){
-	exec('npm run patch && gatsby build --prefix-paths && sftp-deploy');
+	
+	let build_script = exec('npm run patch && gatsby build --prefix-paths && sftp-deploy');
+	
+	build_script.stdout.on('data', function(data){
+	    console.log(data); 
+	});
+	
+	build_script.stderr.on('data', function(data){
+	    console.log(data);
+	});	   
+	
 	callback();
 } 
 
@@ -59,16 +69,7 @@ app.post('/', function (req, res) {
   if(build == 'go'){
 	res.set('Content-Type', 'text/plain')
 	res.send(`Build running`)	
-
-	const build_script = build_app(cache_clear);
-	build_script.stdout.on('data', function(data){
-	    console.log(data); 
-	});
-	
-	build_script.stderr.on('data', function(data){
-	    console.log(data);
-	});	   
-	
+	build_app(cache_clear);	
   }
   else{
 	'FAIL build not running'
