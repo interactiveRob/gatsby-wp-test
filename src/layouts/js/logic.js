@@ -55,6 +55,35 @@ document.querySelectorAll('.chart-article').forEach(chartContainer =>{
     });
 })
 
+//contact us popup
+const popup = document.querySelector('.popup-holder');
+
+document.querySelectorAll('.contact-cta').forEach(contactCTA =>{
+    contactCTA.addEventListener('click',function(){
+        popup.classList.add('open');
+        document.querySelector('body').classList.add('no-scroll');
+    });
+    popup.querySelector('.close-chart').addEventListener('click',function(){
+        popup.classList.remove('open');
+        document.querySelector('body').classList.remove('no-scroll');
+    });    
+})
+
+//form
+function form_submit(){
+	var formData = new FormData( document.getElementById("pardot-form") );
+	var xmlhttp = new XMLHttpRequest();   // new HttpRequest instance 
+	xmlhttp.open("POST", "https://events.constellation.com/l/484581/2018-09-08/7tsvj");
+	xmlhttp.send(formData);
+	console.log('request sent');
+}
+
+document.querySelector('#form-submit').addEventListener('click',function(e){
+	e.preventDefault();
+	form_submit();
+});
+
+
 // animations
 
 window.addEventListener('scroll', slideUp);

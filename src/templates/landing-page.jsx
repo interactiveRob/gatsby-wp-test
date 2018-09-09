@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import AccordionSection from "../components/accordion-section"
 import Article from "../components/article"
+import ContactForm from "../components/contact-form"
 import DoubleChart from "../components/double-chart"
 import Footer from "../components/footer"
 import Hero from "../components/hero"
@@ -63,6 +64,7 @@ class LandingPage extends Component {
 
 			<Solutions/>
 			<Footer/>
+			<ContactForm/>
 		</div>
     )
   }

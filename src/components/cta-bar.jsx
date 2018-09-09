@@ -8,7 +8,7 @@ class CTABar extends React.Component {
                 The market may be volatile, but a flexible power purchasing strategy can help your business achieve budget certainty and mitigate risk.
                 <strong> Contact us to learn more about optimizing your current strategy.</strong>
             </div>
-            <button className="add-pop">Contact us</button>
+            <button className="add-pop contact-cta">Contact us</button>
         </div>	 		 
 	 )
   }

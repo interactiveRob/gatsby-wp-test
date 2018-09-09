@@ -12,7 +12,7 @@ const Header = ({ siteTitle }) => (
                 </div>
             </div>
             <div className="right">
-                <button className="slide-left">Contact us</button>
+                <button className="slide-left contact-cta">Contact us</button>
             </div>
         </div>
     </nav>

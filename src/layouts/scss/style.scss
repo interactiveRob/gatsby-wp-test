@@ -316,7 +316,7 @@ li{
         }
     }
 }
-.chart{
+.chart, .popup-holder{
     position: fixed;
     top:66px;
     left:0;
@@ -360,7 +360,7 @@ li{
     font-weight: 200;
     padding-bottom: 30px;
 }
-button,.btn{
+button,.btn, input[type=submit]{
 	 font-family: 'benton-sans', Helvetica, Arial, sans-serif;
     color:#fff;
     padding:12px 20px;
@@ -384,7 +384,7 @@ button,.btn{
 }
 .blue{
     a:not(.btn){color:$blue}
-    button,.btn{background-color: $blue;}
+    button,.btn, input[type=submit]{background-color: $blue;}
     .test-title{
         div:nth-child(2){
             color:$blue;
@@ -392,7 +392,7 @@ button,.btn{
         .question-mark{background-image: url(../img/blue-question.svg)}
     }
 }
-.orange{
+.orange,{
     a:not(.btn){color:$orange}
     button,.btn{background-color: $orange;}
     .test-title{
@@ -412,6 +412,10 @@ button,.btn{
         .question-mark{background-image: url(../img/green-question.svg)}
     }
 }
+.bg-oj{
+	background-color: $orange;
+}
+
 section{
     padding:100px 0;
 }
@@ -928,6 +932,41 @@ footer{
         font-size: 11px;
     }
 }
+
+/* form styling */
+form{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 620px; 
+	position: relative;
+	top: 66px;
+	margin: 40px auto 40px;
+	.form-field{
+		width: 45%;
+		margin-bottom: 15px;
+		color: #2372b9;
+		label{
+			display: block;
+			width: 100%;
+			padding-bottom: 5px;
+		}
+		input{
+			display: block;
+			width: 100%;
+			height: 45px;			
+			border: solid 2px #2372b9;
+			color: #2372b9;
+		}
+	}
+	.submit{
+		width: 100%;
+	}
+}
+
+
 
 /* retina display */
 

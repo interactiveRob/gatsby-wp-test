@@ -19,6 +19,4 @@ function cache_clear(){
 	});
 }
 
-setTimeout(function(){
-	cache_clear();
-}, 5000);
+cache_clear();
