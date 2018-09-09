@@ -1,7 +1,7 @@
 module.exports = {
 pathPrefix: `/public`,
   siteMetadata: {
-    title: 'Constellation | Power Upsell',
+    title: 'Constellation',
   },
   plugins: ['gatsby-plugin-sass', 'gatsby-plugin-react-helmet', 
 	  	{
