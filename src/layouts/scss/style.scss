@@ -1306,6 +1306,7 @@ only screen and (                min-resolution: 2dppx) {
 .add-pop{
     opacity: 0;
 }
+
 .pop{
     transition-delay: 0.6s;
     opacity: 1;
@@ -1313,10 +1314,17 @@ only screen and (                min-resolution: 2dppx) {
     animation-delay: 0.6s;
     transform-origin: center;
 }
+
 .pop:nth-of-type(2n){
     transition-delay: 0.7s;
     animation-delay: 0.7s;
 }
+
+.no-hover-delay{
+	transition-delay: 0s !important;
+	animation-delay: 0s !important;
+}
+
 @keyframes pop{
     0%{
         transform: scale(0);

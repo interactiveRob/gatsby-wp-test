@@ -31,7 +31,7 @@ document.querySelectorAll('.test-container').forEach(test=>{
         smoothHeight(test);
         setTimeout(() => {
             test.querySelector('.test').classList.add('yes');            
-        }, 800);
+        }, 600);
     });
     test.querySelectorAll('.wrong').forEach(wrong=>{
         wrong.addEventListener('click', function(){
@@ -39,7 +39,7 @@ document.querySelectorAll('.test-container').forEach(test=>{
             smoothHeight(test);
             setTimeout(() => {
                 test.querySelector('.test').classList.add('no');            
-            }, 800);
+            }, 600);
         })
     })
     test.querySelectorAll('.wrong-2').forEach(wrong2=>{
@@ -48,7 +48,7 @@ document.querySelectorAll('.test-container').forEach(test=>{
             smoothHeight(test);
             setTimeout(() => {
                 test.querySelector('.test').classList.add('no-2');            
-            }, 800);
+            }, 600);
         })
     })    
 })
@@ -213,6 +213,10 @@ function slideUp(){
         var box = slide.getBoundingClientRect();
         if((document.documentElement.scrollTop+document.documentElement.clientHeight > (box.top + document.documentElement.scrollTop))){
             slide.classList.add('pop');
-        }
+            
+            setTimeout(function(){
+	         	slide.classList.add('no-hover-delay');   
+            }, 1000);
+        } 
     });
 }
