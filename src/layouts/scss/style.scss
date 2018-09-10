@@ -195,6 +195,7 @@ li{
 }
 .test-container{
     min-height: 0px;
+    max-height: 9999px;
     padding: 65px 0;
     margin: 110px 0;
     border-top: 2px solid #ddd;
@@ -202,7 +203,8 @@ li{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: all ease 300ms;
+    transition-delay: 200ms;
+    transition: all ease 400ms;
     @media screen and (max-width: 480px){
 	    margin: 60px 0;
 	 }
@@ -210,6 +212,27 @@ li{
 	   min-height: 0px;
 	 	transition: all ease 300ms;   
     }
+    .back-btn{
+	    width: 100%;
+	    margin-top: 20px;
+		 
+	    button{
+		   max-width: 100% !important;
+		   width: auto !important;
+		 	float: left;   
+		 	@media screen and (max-width: 480px){
+			 	margin-top: 30px;
+			 	float: none;
+		 	}
+	    }
+	    span{
+		    margin-right: 0px;
+		    margin-left: 8px; 
+	    }
+	    img{
+		    transform: rotate(90deg);
+	    }
+    }    
     &.expand{
 	    transition: all ease 300ms;
 	    min-height: 370px; 
@@ -301,6 +324,8 @@ li{
             opacity: 1;
             animation: slide-up 0.8s;
             align-items: center;
+            flex-flow: row wrap;
+            
             @media(max-width: 900px){
                 flex-direction: column;
                 align-items: center;
@@ -328,7 +353,7 @@ li{
                 color: #888;
                 line-height: 1.5;
                 letter-spacing: 0.3px;
-                max-width:80%;
+                max-width:78%;
                 @media screen and (max-width: 480px){
 	                max-width: 100%;
 	                padding-left: 0px;
@@ -401,7 +426,8 @@ li{
         justify-content: center;
         align-items: center;
         img{
-          margin-top: 80px;
+	        max-width: 100%;
+          	margin-top: 80px;
             max-height: 50vh;
             margin-bottom: 30px;
             @media(max-width: 900px){
@@ -416,6 +442,7 @@ li{
         }
         .fig1{
 	     	  margin-top: 40px;
+	     	  
         }
         .fig2{
 	        max-height: 65vh;
@@ -435,6 +462,7 @@ li{
         }
     }
 }
+
 .big-white{
     font-size: 27px;
     line-height: 1.5;
@@ -831,6 +859,9 @@ header{
             max-width: 400px;
         }
     }
+    .test-container{
+	    margin-top: 60px;
+    }
     .test{
         button{
             width: 270px;
@@ -844,6 +875,32 @@ header{
             }
         }
     }
+}
+
+#orange2, #green2{
+  .text{
+      font-size:25px;
+      line-height: 1.3;
+      letter-spacing: 0.5px;
+      color: #888;
+      max-width: 710px;
+      margin: 20px auto 0;
+      @media screen and (max-width: 480px){
+         font-size: 21px;
+      }
+      &.center{
+          text-align: center;
+          margin-bottom: 30px;
+      }
+      &.chart-conclusion{
+			margin: 77px auto 0px;
+			font-size: 21px;
+			@media screen and (max-width: 480px){
+				font-size: 18px;
+				width: 90%;
+			}
+      }
+  }	
 }
 
 #green2 {
@@ -872,21 +929,6 @@ margin-bottom: 20px;
             text-align: center;
             margin-bottom: 30px;
             padding-top: 40px;
-        }
-        .text{
-            font-size:25px;
-            line-height: 1.3;
-            letter-spacing: 0.5px;
-            color: #888;
-            max-width: 710px;
-            margin: 20px auto 0;
-            @media screen and (max-width: 480px){
-	            font-size: 21px;
-            }
-            &.center{
-                text-align: center;
-                margin-bottom: 30px;
-            }
         }
         .test-container{
             margin-bottom: 70px;

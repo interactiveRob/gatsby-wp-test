@@ -37,11 +37,7 @@ class DoubleChart extends React.Component {
 	           
 	           {this.props.chart == 'fig2a' &&
                <div className="container">
-                   <img src={fig2a} srcSet={fig2a2x} alt=""/>
-                   <div className="data">
-                       While no single strategy resulted in the lowest price every year, some strategies yielded more risk than others. Overall, the flexible purchasing strategies effectively reduced both budget risk and price over the 13-year time period, regardless of market conditions. By adopting a flexible, managed energy purchasing strategy, you can positively impact your power costs.
-                   </div>
-                   
+                   <img src={fig2a} srcSet={fig2a2x} alt=""/>          
        				<div className="close-btn">
 	            	   <button className="bg-oj close-chart">Close</button>
 						</div>   

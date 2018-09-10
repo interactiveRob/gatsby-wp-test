@@ -1,7 +1,7 @@
 import React from 'react';
 import CTABar from "../components/cta-bar"
 import nextSVG from "../layouts/img/next.svg";
-
+import fisSheet from "../layouts/img/CON_8690_FIS Product Sheet ForWeb.pdf"
 
 class Solutions extends React.Component {
   render() {	 
@@ -18,7 +18,7 @@ class Solutions extends React.Component {
 						<div className="add-slide-up">
 						    Our Flexible Index Solutions (FIS) program enables you to make smaller, fixed price purchases over time, which helps your business manage market extremes. By spreading out the tiing risk, your business can take advantage of price lows while still fixing costs in case prices rise.
 						</div>
-						<a href="https://www.constellation.com/solutions/for-your-commercial-business/Electricity/flexible-index.html" target="_blank" className="btn add-pop">
+						<a href={fisSheet} target="_blank" className="btn add-pop">
 						    <span>Learn more</span>
 						    <img src={nextSVG} alt=""/>
 						</a>
@@ -33,7 +33,7 @@ class Solutions extends React.Component {
 							</a>
 						</div>
 					</div>
-					<div className="add-slide-up" dangerouslySetInnerHTML={{__html: 'By using dollar-cost averaging, you can purchase a fixed amount of power on a regular basis, When prices are low, that fixed amount buys more; when prices are high, the fixed amount buys less. This can help reduce long-term&nbsp;risk.'}}/>
+					<div className="add-slide-up" dangerouslySetInnerHTML={{__html: 'By using dollar-cost averaging through FIS, you can purchase a fixed amount of power on a regular basis, When prices are low, that fixed amount buys more; when prices are high, the fixed amount buys less. This can help reduce long-term&nbsp;risk.'}}/>
 				</div>
 				<div className="solution orange-solution">
 					<h2 className="add-slide-up">MarketWatch</h2>

@@ -1,4 +1,5 @@
 import React from 'react';
+import circleDownSVG from "../layouts/img/circle-down.svg"
 
 
 class Quiz extends React.Component {
@@ -41,12 +42,18 @@ class Quiz extends React.Component {
 			            <div className=" icon pass-icon"  dangerouslySetInnerHTML={{__html: passSVG}}/>
 			            <div className="explanation">
 			                <b>Correct. </b>While a fixed-price contract can lock in a low price for the short term, you also have to consider the long term. Prices may be higher when it’s time to renew, forcing you to pay more. Or, prices may continue to drop after you lock in, meaning you forfeited a lower price.
+			                <div className="back-btn">
+					            <button className="back-to-quiz"><img src={circleDownSVG} alt=""/> <span>Back to choices</span></button>
+				            </div>
 			            </div>
 			        </div>
 			        <div className="result fail">
                      <div className=" icon pass-icon"  dangerouslySetInnerHTML={{__html: failSVG}}/>
 			            <div className="explanation">
 			                <b>Incorrect. </b>While a fixed-price contract can lock in a low price for the short term, you also have to consider the long term. Prices may be higher when it’s time to renew, forcing you to pay more. Or, prices may continue to drop after you lock in, meaning you forfeited a lower price.
+								 <div className="back-btn">
+					            <button className="back-to-quiz"><img src={circleDownSVG} alt=""/> <span>Back to choices</span></button>
+				            </div>			                
 			            </div>
 			        </div>
 			   </div>				    
@@ -63,13 +70,20 @@ class Quiz extends React.Component {
                      <div className=" icon pass-icon"  dangerouslySetInnerHTML={{__html: passSVG}}/>
                      <div className="explanation">
                          <b>Correct. </b>The 100% All Months Fixed and 100% Index strategies hit the highs and lows most years. This resulted in the most significant price volatility.
+                         <div className="back-btn">
+					            <button className="back-to-quiz"><img src={circleDownSVG} alt=""/> <span>Back to choices</span></button>
+				            </div>
                      </div>
                  </div>
                  <div className="result fail">
                      <div className=" icon pass-icon"  dangerouslySetInnerHTML={{__html: failSVG}}/>
                      <div className="explanation">
                          <b>Incorrect. </b>The 100% All Months Fixed and 100% Index strategies hit the highs and lows most years. This resulted in the most significant price volatility. Flexible strategies with a percentage fixed and percentage index achieve a more balanced result.
+                      	<div className="back-btn">
+					            <button className="back-to-quiz"><img src={circleDownSVG} alt=""/> <span>Back to choices</span></button>
+				            </div>   
                      </div>
+                     
                  </div>
              </div>			    
 		    }
@@ -84,19 +98,28 @@ class Quiz extends React.Component {
                  <div className="result pass">
                      <div className=" icon pass-icon"  dangerouslySetInnerHTML={{__html: passSVG}}/>
                      <div className="explanation">
-                         <b>Correct. </b>Businesses that manage their power purchasing based on time, price and execution can minimize risk and achieve budget certainty.
+                         <b>Correct. </b>Businesses that manage their power purchasing based on time, price and execution can minimize risk and achieve budget&nbsp;certainty.
+                         <div className="back-btn">
+					            <button className="back-to-quiz"><img src={circleDownSVG} alt=""/> <span>Back to choices</span></button>
+				            </div>
                      </div>
                  </div>
                  <div className="result fail">
                      <div className=" icon pass-icon"  dangerouslySetInnerHTML={{__html: failSVG}}/>
                      <div className="explanation">
                          <b>Incorrect. </b>Locking in your price now may protect you for a contract period — but the price may be much higher when it comes time to renew, exposing you to price volatility.
+                         <div className="back-btn">
+					            <button className="back-to-quiz"><img src={circleDownSVG} alt=""/> <span>Back to choices</span></button>
+				            </div>
                      </div>
                  </div>
                  <div className="result fail-2">
                     <div className=" icon pass-icon"  dangerouslySetInnerHTML={{__html: failSVG}}/>
                      <div className="explanation">
                          <b>Incorrect. </b>If your business waits, prices may go down — but there’s also a chance they may go up, exposing you to risk.
+                         <div className="back-btn">
+					            <button className="back-to-quiz"><img src={circleDownSVG} alt=""/> <span>Back to choices</span></button>
+				            </div>
                      </div>
                  </div>                 
              </div>			    

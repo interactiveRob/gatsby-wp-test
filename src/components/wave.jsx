@@ -66,17 +66,16 @@ class Hero extends React.Component {
 			                    <div className="accordion">
 			                        <div className="title">Budget certainty</div>
 			                        <div className="data">
-			                            If you don't know how much you're going to pay for power in the next six, 12 or 24 months, it can become challenging to manage your business budget.<br/>
-			                            Many Businesses find it valuable to use a strategy that maximizes budget predictability.
+			                            If you don't know how much you're going to pay for power in the next six, 12 or 24 months, it can become challenging to manage your business budget. Many Businesses find it valuable to use a strategy that maximizes budget predictability.
 			                        </div>
 			                    </div>
 			                    <div className="accordion">
 			                        <div className="title">Flexibility</div>
-			                        <div className="data">Do you want a power purchasing strategy that gives you flexibility as the market changes? Or do you want to remain in the same strategy, no matter what?</div>
+			                        <div className="data">Do you want a power purchasing strategy that gives you flexibility as the market changes? Or do you want to remain in the same strategy, no matter what? You may want to think about how your business uses energy. For example, do you use more energy in the summer or the winter? Does your business operate 24/7 and use a consistent amount of power throughout the day? Understanding your usage patterns and goals can help you plan your purchasing strategy.</div>
 			                    </div>
 			                    <div className="accordion">
 			                        <div className="title">Automation</div>
-			                        <div className="data">Rather than worrying about whether you’re making the right purchasing decision at the right time, you can automate some or all of your power purchasing. This allows you to use an algorithmic approach make purchases, which can help you achieve a more consistent price over time. </div>
+			                        <div className="data">Rather than worrying about whether you’re making the right purchasing decision at the right time, you can automate some or all of your power purchasing. An automated, algorithmic approach can help you achieve a more consistent price over time.</div>
 			                    </div>
 			                </div>
 							</div>								

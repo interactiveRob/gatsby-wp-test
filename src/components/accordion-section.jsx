@@ -11,7 +11,7 @@ class AccordionSection extends React.Component {
                     <div className="accordion">
                         <div className="title">Weather</div>
                         <div className="data">
-                            Extreme weather has a significant impact on supply on demand. When natural disasters hinder energy production, supply goes down and prices tend to jump up. Natural disasters, such as hurricanes, blizzards and polar vortices can also damage the infrastructure used to generate energy, which can also drive up prices.
+                            Extreme weather has a significant impact on supply on demand. When natural disasters hinder energy production, supply goes down and prices tend to jump up. Natural disasters, such as hurricanes, blizzards and polar vortices can also damage the infrastructure used to generate energy, which can also drive up prices. For example, while prices generally declined from 2010 to 2017, the polar vortex in 2014 caused prices to temporarily spike.
                         </div>
                     </div>
                     <div className="accordion">

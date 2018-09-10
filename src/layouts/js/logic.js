@@ -26,12 +26,14 @@ document.querySelectorAll('.accordion .data').forEach(data =>{
 
 //test
 document.querySelectorAll('.test-container').forEach(test=>{
+	 let initial_height = test.offsetHeight;
+	 
     test.querySelector('.right').addEventListener('click',function(){
         test.querySelector('.answer').classList.add('clicked');
         smoothHeight(test);
         setTimeout(() => {
             test.querySelector('.test').classList.add('yes');            
-        }, 600);
+        }, 400);
     });
     test.querySelectorAll('.wrong').forEach(wrong=>{
         wrong.addEventListener('click', function(){
@@ -39,7 +41,7 @@ document.querySelectorAll('.test-container').forEach(test=>{
             smoothHeight(test);
             setTimeout(() => {
                 test.querySelector('.test').classList.add('no');            
-            }, 600);
+            }, 400);
         })
     })
     test.querySelectorAll('.wrong-2').forEach(wrong2=>{
@@ -48,9 +50,21 @@ document.querySelectorAll('.test-container').forEach(test=>{
             smoothHeight(test);
             setTimeout(() => {
                 test.querySelector('.test').classList.add('no-2');            
-            }, 600);
+            }, 400);
         })
     })    
+    test.querySelectorAll('.back-to-quiz').forEach(backButton =>{
+	    backButton.addEventListener('click' , function(){
+		    test.querySelector('.test').classList.remove('yes', 'no', 'no-2');
+		    test.querySelector('.answer').classList.remove('clicked');
+		    test.setAttribute('style', 'max-height: ' + initial_height + 'px;' + ' min-height: ' + initial_height + 'px;' );
+		    test.classList.remove('expand');
+		    
+		    setTimeout(function(){
+			    test.setAttribute('style', '' );
+		    }, 500);
+	    });
+	 });   
 })
 
 function smoothHeight(parent){

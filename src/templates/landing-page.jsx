@@ -33,7 +33,7 @@ class LandingPage extends Component {
 			<Hero/>
 			<Intro/>
 			
-			<Wave id="blue2" color="blue" headline="What's causing the power market to fluctuate?" descr="A variety of events - from the weather to the economy - can cause the power market to rise and fall. Those conditions. as well as your power purchasing strategy, can have a significant impact on the price you pay for power over time. To demonstrate this. we compared how nine different purchasing strategies performed over a 13-year period. Overall, there was a 41% price variance between the highest- and lowest-performing approaches."/>
+			<Wave id="blue2" color="blue" headline="What's causing the power market to fluctuate?" descr="A variety of events &mdash; from the weather to the economy &mdash; can cause the power market to rise and fall. Those conditions. as well as your power purchasing strategy, can have a significant impact on the price you pay for power over time. To demonstrate this. we compared how nine different purchasing strategies performed over a 13-year period. Overall, there was a 41% price variance between the highest- and lowest-performing approaches."/>
 			
 			<Section id="blue3" color="blue">
 				<AccordionSection descr="Many different factors can affect the price of energy. The period of 2005 to 2017 covered a range of economic and market conditions, which caused the market to both rise and fall.<br />Here's a look at what happened during that time and how it affected prices."/>
@@ -45,14 +45,15 @@ class LandingPage extends Component {
 		    
 			<Section id="orange2" color="orange">
 				<div className="flex">
-					<DoubleChart id="chart1" descr="Over 13 years, from 2005 to 2017, the different approaches yielded significantly different results. Here's how they compared:" chart="fig2"/>
+					<DoubleChart id="chart1" descr="Over 13 years, from 2005 to 2017, the different approaches yielded significantly different results. Here's how they compared:" chart="fig2a"/>
 					<DoubleChart id="chart2" descr="Constellation recently researched how nine different purchasing strategies performed over a span of 13 years:" chart="fig2a"/>
 				</div>
+				<div className="text chart-conclusion add-slide-up slide-up">While no single strategy resulted in the lowest price every year, some strategies carried more risk than others. However, the flexible purchasing strategy effectively reduced both budget risk and price, over the 13-year time period, regardless of market conditions. By adopting a flexible, managed power purchasing strategy, you can positively impact your power costs.</div>
 				<Quiz quizID="quiz2"/>
 <Article icon="orange3SVG" descr={"Get more detailed insight into how different purchasing strategies performed over time by downloading the white paper, <a href=" + pdfDownload + ">&ldquo;Evaluating Power Purchasing Strategies for Your Business.&rdquo;</a>"} button="downloadNow"/>
 			</Section>				 
 
-			<Wave id="green1" color="green" headline="What power purchasing strategy is best for my company?" descr="There's no one power purchasing strategy that works for every company - because every business is unique. You should base your approach on your business's preferences for the following:"/>			
+			<Wave id="green1" color="green" headline="What power purchasing strategy is best for my company?" descr="There's no one power purchasing strategy that works for every company &mdash; because every business is unique. You should base your approach on your business's preferences for the following:"/>			
 			
 			<Section id="green2" color="green">
 				<div className="text add-slide-up">
