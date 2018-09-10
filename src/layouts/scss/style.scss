@@ -66,7 +66,7 @@ $orange-gradient: linear-gradient(to right, #f65c2a, #fbaa57);
 $green-gradient: linear-gradient(to right, #0b994b, #bbce57);
 $grey-gradient: linear-gradient(to right, #818486, #979a9c);
 
-$benton: benton-sans, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$benton: benton-sans, 'Helvetica', Arial, sans-serif;
 $icomoon: icomoon, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 /* GENERAL */
@@ -361,7 +361,8 @@ li{
     padding-bottom: 30px;
 }
 button,.btn, input[type=submit]{
-	 font-family: 'benton-sans', Helvetica, Arial, sans-serif;
+	font-family: 'benton-sans', Helvetica, Arial, sans-serif;
+	outline: none;
     color:#fff;
     padding:12px 20px;
     border:0;
@@ -374,6 +375,10 @@ button,.btn, input[type=submit]{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 300ms;
+    &:hover{
+	    transform: scale(1.05);
+    }
     span{
         margin-right: 8px;
         font-size: 16px;
@@ -534,7 +539,7 @@ nav{
         .right{
             button{
 	            background-color: $blue;
-	            padding: 10px 30px 12px;
+	            padding: 11px 30px 10px;
             }
             @media(max-width: 900px){
                 display:none;
@@ -934,7 +939,44 @@ footer{
 }
 
 /* form styling */
-form{
+.popup-holder{
+	h2.form-header{
+		color: $blue;
+		font-family: $benton;
+		margin: 0 auto 10px;
+		text-align: center;
+		transition: all ease 500ms;
+	}
+	.thank-you-msg{
+		color: $blue;
+		font-family: $benton;
+		text-align: center;
+		margin: 0 auto;
+		max-width: 580px;
+		font-size: 24px;
+		line-height: 1.4;
+		@media screen and (max-width: 480px){
+			font-size: 21px;
+		}
+	}
+	.container{
+		position: relative;
+		height: calc(100vh - 66px);
+		.close-btn{
+			position: absolute;
+			position: absolute;
+			bottom: 40px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			text-align: center;
+		}
+		.close-chart{
+			
+		}
+	}
+}
+.form{
 	display: flex;
 	flex-flow: row wrap;
 	align-items: center;
@@ -942,12 +984,14 @@ form{
 	width: 100%;
 	max-width: 620px; 
 	position: relative;
-	top: 66px;
-	margin: 40px auto 40px;
+	margin: 20px auto 60px;
+	transition: all ease 500ms;
 	.form-field{
-		width: 45%;
-		margin-bottom: 15px;
+		width: 47.5%;
+		margin-bottom: 20px;
 		color: #2372b9;
+		@media screen and (max-width: 768px){
+		}
 		label{
 			display: block;
 			width: 100%;
@@ -959,14 +1003,30 @@ form{
 			height: 45px;			
 			border: solid 2px #2372b9;
 			color: #2372b9;
+			padding-left: 15px;
+			font-size: 16px;
+			@media screen and (max-width: 768px){
+				height: 35px;
+			}
 		}
 	}
 	.submit{
+		margin-top: 13px;
 		width: 100%;
+	}
+	.error{
+		color: #d00000;
 	}
 }
 
-
+.hide-me{
+	height: 0px; 
+	opacity: 0;
+}
+.show-me{
+	height: auto; 
+	opacity: 1;
+}
 
 /* retina display */
 
