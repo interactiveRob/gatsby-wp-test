@@ -3,6 +3,7 @@ import blue2SVG from "../layouts/img/blue2.svg";
 import orange3SVG from "../layouts/img/orange3.svg";
 import playSVG from "../layouts/img/play.svg";
 import circleDownSVG from "../layouts/img/circle-down.svg"
+import pdfDownload from "../layouts/img/CON_9207_Energy_Purchasing_Strategies_White_Paper Sept2018.pdf"
 
 class Article extends React.Component {
   render() {	 
@@ -26,10 +27,10 @@ class Article extends React.Component {
 	          </a>	          
           }	
 	       {this.props.button == "downloadNow" &&
-	          <button className="add-pop">
+	          <a href={pdfDownload} target="_blank" className="add-pop btn">
 	              <span>Download now</span>
 	              <img src={circleDownSVG} alt=""/>
-	          </button>	          
+	          </a>	          
           }	
 
       </div>	 
