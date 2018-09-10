@@ -5,25 +5,26 @@ class AccordionSection extends React.Component {
 	 
 	 const waveColor = this.props.color;
 	 return(		 
-	 	          <div className="flex">
+ 	          <div className="flex">
                 <div className="add-slide-up" dangerouslySetInnerHTML = {{__html : this.props.descr}} />
                 <div className="accordion-container add-slide-up">
                     <div className="accordion">
                         <div className="title">Weather</div>
                         <div className="data">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eius hic facere quasi expedita facilis dignissimos tenetur! Blanditiis nesciunt aliquam fugiat, dolore voluptates aspernatur incidunt hic reprehenderit libero obcaecati cupiditate?
+                            Extreme weather has a significant impact on supply on demand. When natural disasters hinder energy production, supply goes down and prices tend to jump up. Natural disasters, such as hurricanes, blizzards and polar vortices can also damage the infrastructure used to generate energy, which can also drive up prices.
                         </div>
                     </div>
                     <div className="accordion">
                         <div className="title">Economy</div>
                         <div className="data">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eius hic facere quasi expedita facilis dignissimos tenetur! Blanditiis nesciunt aliquam fugiat, dolore voluptates aspernatur incidunt hic reprehenderit libero obcaecati cupiditate?
+                            From 2005 to 2010, the economy was growing and power prices were on the rise. However, there was a steep drop-off in prices caused by an economic recession in 2009.
                         </div>
                     </div>
                     <div className="accordion">
                         <div className="title">Shale Revolution</div>
                         <div className="data">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eius hic facere quasi expedita facilis dignissimos tenetur! Blanditiis nesciunt aliquam fugiat, dolore voluptates aspernatur incidunt hic reprehenderit libero obcaecati cupiditate?
+                           The shale gas boom had a profound effect on the market from 2011 to 2017. Shale gas production increased sharply, causing average energy prices to drop steadily.
+ 
                         </div>
                     </div>
                 </div>

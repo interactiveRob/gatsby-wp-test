@@ -20,10 +20,10 @@ class Article extends React.Component {
           
           <div className="add-slide-up" dangerouslySetInnerHTML = {{__html : this.props.descr}} />
           {this.props.button == "watchNow" &&
-	          <button className="add-pop">
+	          <a href="https://energy.constellation.com/market-intel_webinar-resources-july2018" className="add-pop btn">
 	              <span>Watch now</span>
 	              <img src={playSVG} alt=""/>
-	          </button>	          
+	          </a>	          
           }	
 	       {this.props.button == "downloadNow" &&
 	          <button className="add-pop">

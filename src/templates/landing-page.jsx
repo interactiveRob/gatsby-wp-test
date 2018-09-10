@@ -6,6 +6,7 @@ import DoubleChart from "../components/double-chart"
 import Footer from "../components/footer"
 import Hero from "../components/hero"
 import Intro from "../components/intro"
+import Popups from "../components/popups"
 import Quiz from "../components/quiz"
 import Section from "../components/section"
 import Solutions from "../components/solutions"
@@ -36,15 +37,15 @@ class LandingPage extends Component {
 			<Section id="blue3" color="blue">
 				<AccordionSection descr="Many different factors can affect the price of energy. The period of 2005 to 2017 covered a range of economic and market conditions, which caused the market to both rise and fall.<br />Here's a look at what happened during that time and how it affected prices."/>
 				<Quiz quizID="quiz1"/>
-				<Article icon="blue2SVG" descr="Staying informed on market changes can help you determine how to adjust your power purchasing accordingly. Watch our latest <a href='#'>Energy Market Outlook webinar</a> to see what's ahead." button="watchNow"/>
+				<Article icon="blue2SVG" descr="Staying informed on market changes can help you determine how to adjust your power purchasing accordingly. Watch our latest <a href='https://energy.constellation.com/market-intel_webinar-resources-july2018'>Energy Market Outlook webinar</a> to see what's ahead." button="watchNow"/>
 			</Section>	
 			
 		    <Wave id="orange1" color="orange" headline="What power purchasing options are available?" descr="There are a range of approaches you can use to purchase power, but there are four main variables to consider within the components of price and time:" />
 		    
 			<Section id="orange2" color="orange">
 				<div className="flex">
-					<DoubleChart id="chart1" descr="Over 13 years, from 2005 to 2017, the different approaches yielded significantly different results. Here's how they compared:"/>
-					<DoubleChart id="chart2" descr="Constellation recently researched how nine different purchasing strategies performed over a span of 13 years:" />
+					<DoubleChart id="chart1" descr="Over 13 years, from 2005 to 2017, the different approaches yielded significantly different results. Here's how they compared:" chart="fig2"/>
+					<DoubleChart id="chart2" descr="Constellation recently researched how nine different purchasing strategies performed over a span of 13 years:" chart="fig2a"/>
 				</div>
 				<Quiz quizID="quiz2"/>
 <Article icon="orange3SVG" descr="Get more detailed insight into how different purchasing strategies performed over time by downloading the white paper, &ldquo;<a href='#'>Evaluating Power Purchasing Strategies for Your Business</a>.&rdquo;" button="downloadNow"/>
@@ -65,6 +66,7 @@ class LandingPage extends Component {
 			<Solutions/>
 			<Footer/>
 			<ContactForm/>
+			<Popups/>
 		</div>
     )
   }

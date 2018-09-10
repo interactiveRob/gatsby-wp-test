@@ -1,6 +1,7 @@
 import React from 'react';
 import Motif from "../layouts/img/header-glow.png";
 import Motif2x from "../layouts/img/header-glow2x.png";
+import MotifBar from "../layouts/img/bg-img-mob.png";
 
 let motifSrcSet = `${Motif} 1x, ${Motif2x} 2x`; 
 
@@ -15,7 +16,8 @@ class Hero extends React.Component {
 	            <div className="slide-right-small">stable</div>
 	            <div className="slide-right">power strategy.</div>
 	        </div>
-	        <img src={Motif} srcSet={motifSrcSet} alt=""/>
+	        <img className="motif" src={Motif} srcSet={motifSrcSet} alt=""/>
+	        <img className="motif-bar" src={MotifBar} />
 	    </header>		 
 	 )
   }

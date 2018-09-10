@@ -11,6 +11,7 @@ const Layout = ({ children, data }) => (
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
+        { name:'robots', content: 'noindex, nofollow'}
       ]}
     />
      <Header/> 

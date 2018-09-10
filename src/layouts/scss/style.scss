@@ -194,6 +194,7 @@ li{
     }
 }
 .test-container{
+    min-height: 0px;
     padding: 65px 0;
     margin: 110px 0;
     border-top: 2px solid #ddd;
@@ -201,6 +202,21 @@ li{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: all ease 300ms;
+    @media screen and (max-width: 480px){
+	    margin: 60px 0;
+	 }
+    .test{
+	   min-height: 0px;
+	 	transition: all ease 300ms;   
+    }
+    &.expand{
+	    transition: all ease 300ms;
+	    min-height: 370px; 
+	    .test{
+		    min-height: 240px;
+	    }
+    }
     @media(max-width: 900px){
 	     align-items: flex-start;
         flex-direction: column;
@@ -239,6 +255,10 @@ li{
     .test{
       padding-left: 40px;
         max-width: 800px;
+	     @media screen and (max-width: 480px){
+		     padding-left: 0px;
+	     }
+
         .question{
             font-size:26px;
             color: #888;
@@ -246,7 +266,9 @@ li{
             font-weight: 500;
             letter-spacing: 0.5px;
             line-height: 1.4;
-
+   	     @media screen and (max-width: 480px){
+	   	     font-size: 24px;
+			  }
         }
         .answer{
             display: flex;
@@ -268,40 +290,49 @@ li{
                     font-size: 18px;
                     margin-bottom: 20px;
                 }
+                @media(max-width: 480px){
+	                font-size: 15px;
+	                margin-right: 0px;
+                }
             }
         }
         .result{
             display: none;
             opacity: 1;
             animation: slide-up 0.8s;
-            align-items: flex-start;
+            align-items: center;
             @media(max-width: 900px){
                 flex-direction: column;
                 align-items: center;
             }
-            .icon{
-
-                width:80px;
-                height:80px;
+            .pass-icon, .fail-icon{
+                width:135px;
+                height:135px;
                 margin-right: 20px;
-                background-size: contain;
-                background-position: center;
-                background-repeat: no-repeat;
                 @media(max-width: 900px){
                     margin-right:0;
                     margin-bottom: 20px;
                 }
-            }
-            &.pass .icon{background-image: url(../img/pass.svg);
-            }
-            &.fail .icon{background-image: url(../img/fail.svg);
+                @media screen and (max-width: 480px){
+	                margin-top: 8px;
+	             }    
+
+                svg{
+	                width:135px;
+	                height:135px;
+                }
             }
             .explanation{
-                font-size: 14px;
+	            padding-left: 20px;
+                font-size: 16px;
                 color: #888;
                 line-height: 1.5;
                 letter-spacing: 0.3px;
                 max-width:80%;
+                @media screen and (max-width: 480px){
+	                max-width: 100%;
+	                padding-left: 0px;
+                }
             }
         }
         &.yes{
@@ -314,7 +345,42 @@ li{
             .result.fail{display: flex;
             background-size: contain;}
         }
+        &.no-2{
+            .answer{display: none}
+            .result.fail-2{display: flex;
+            background-size: contain;}	        
+        }
     }
+}
+
+.blue{
+	.icon svg{
+		circle, polyline, line{
+			stroke: $blue;	
+		}		
+	}
+}
+
+.green{
+	.icon svg{
+		circle, polyline, line{
+			stroke: $green;	
+		}		
+	}
+}
+
+.orange{
+	.icon svg{
+		circle, polyline, line{
+			stroke: $orange;	
+		}		
+	}
+}
+
+@media screen and (max-width: 480px){
+	.chart-article:nth-child(2){
+			margin-top: 30px;
+	}
 }
 .chart, .popup-holder{
     position: fixed;
@@ -341,6 +407,15 @@ li{
             @media(max-width: 900px){
               width: 100%;
             }
+            @media screen and (max-height: 700px){
+	            margin: 40px auto 20px;
+            }
+        }
+        .fig1{
+	     	  margin-top: 40px;
+        }
+        .fig2{
+	        max-height: 65vh;
         }
         .data{
             color: #888;
@@ -348,6 +423,9 @@ li{
             letter-spacing: 0.2px;
             margin-bottom: 30px;
             text-align: left;
+            max-width: 700px;
+            font-size: 15px;
+            line-height: 1.5;
         }
     }
 }
@@ -359,6 +437,9 @@ li{
     max-width: 500px;
     font-weight: 200;
     padding-bottom: 30px;
+    @media screen and (max-width: 480px){
+	    font-size: 21px;
+    }
 }
 button,.btn, input[type=submit]{
 	font-family: 'benton-sans', Helvetica, Arial, sans-serif;
@@ -438,8 +519,14 @@ h3{
     font-size: 28px;
     font-weight: 500;
 }
+#blue1 .article .btn{
+	width: 180px;
+}
 .article{
     text-align: center;
+    .btn{
+	    width: 165px;
+    }
     .images{
         display: flex;
         justify-content: space-around;
@@ -490,6 +577,10 @@ h3{
     &.orange{background: $orange-gradient}
     &.green{background: $green-gradient}
     &.grey{background: $grey-gradient}
+    
+    .accordion .data{
+	    color: #ffffff;
+    }
 }
 
 /* fixed nav */
@@ -599,7 +690,7 @@ header{
         }
         div:nth-child(4){left:35%;}
     }
-    >img{
+    .motif{
         content: '';
         bottom: -3.35vw;
         right: 0;
@@ -607,7 +698,22 @@ header{
         height: 10.9vw;
         position: absolute;
     }
+    .motif-bar{
+	    display: none;
+    }
+    @media screen and (max-width: 480px){
+	    .motif{
+		    display: none;
+	    }
+	    .motif-bar{
+		    display: block;
+		    width: 100%;
+		    position: absolute;
+		    bottom: 0;
+	    }	    
+    }
 }
+
 
 #blue1{
     .article{
@@ -721,6 +827,12 @@ header{
             width: 270px;
             max-width: none;
             padding: 15px 20px;
+            @media screen and (max-width: 480px){
+	            margin-top: 10px;
+					&:last-child{
+                 margin-bottom: 0px;
+                 }	            
+            }
         }
     }
 }
@@ -728,6 +840,18 @@ header{
 #green2 {
 
 margin-bottom: 20px;
+
+}
+
+#blue3{
+	@media screen and (max-width: 480px){
+		.answer{
+			justify-content: space-between;
+		}
+		.test button{
+			max-width: 45%;
+		}		
+	}
 
 }
 
@@ -747,6 +871,9 @@ margin-bottom: 20px;
             color: #888;
             max-width: 710px;
             margin: 20px auto 0;
+            @media screen and (max-width: 480px){
+	            font-size: 21px;
+            }
             &.center{
                 text-align: center;
                 margin-bottom: 30px;
@@ -761,12 +888,36 @@ margin-bottom: 20px;
                     height: 4rem;
                     font-weight: medium;
                     line-height: 1.4;
+                    @media(max-width: 480px){
+	                    margin-top: 10px;
+	                    width: 90%;
+	                    height: auto;
+	                    padding: 15px 20px;
+	                    &:last-child{
+		                    margin-bottom: 0px;
+	                    }
+                    }
+                    
                 }
             }
         }
+        /* article trio */
+			.trio{ 
+				a{
+					text-decoration: none;
+				} 
+			}
+			
         .read{
+	        margin-top: 10px;
             @media(max-width: 900px){
                 margin-bottom:40px;
+            }
+            @media screen and (max-width: 480px){
+	            margin-top: 40px;
+	            &:last-child{
+		            margin-bottom: 0px;
+	            }
             }
             &:nth-child(1) div:first-child{background-image: url(../img/st1.png)}
             &:nth-child(2) div:first-child{background-image: url(../img/st2.png)}
@@ -788,7 +939,7 @@ margin-bottom: 20px;
                 margin-bottom: 30px;
                 text-align: center;
             }
-            a{
+            a.btn{
                 width: 170px;
             }
         }
@@ -813,13 +964,17 @@ margin-bottom: 20px;
     }
     .solution{
         border-radius: 7px;
-        color: rgba($color: #fff, $alpha: 0.8);
+        color: #ffffff;
         padding:55px;
         line-height: 25px;
         letter-spacing: 0.3px;
         margin-bottom: 60px;
         @media(max-width: 900px){
             text-align: center;
+        }
+        @media screen and (max-width: 480px){
+	       margin-top: 30px;
+	       padding: 30px;
         }
         h2{
             text-align: center;
@@ -844,12 +999,18 @@ margin-bottom: 20px;
                 /* IE10+ CSS styles go here */
                 display: block;
             }
+            @media screen and (max-width: 480px){
+	            margin-bottom: 0px;
+            }
             >div{
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: space-between;
-                padding-right: 50px;
+                &:nth-child(1){
+	             	padding-right: 50px;  
+                }
+                
                 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
                     /* IE10+ CSS styles go here */
                     display: inline-block;
@@ -876,6 +1037,9 @@ margin-bottom: 20px;
         div:nth-child(3) {
           margin-top: 60px;
           margin-bottom: 20px;
+          @media screen and (max-width: 480px){
+	          margin-top: 0px;
+          }
         }
 
 
@@ -896,6 +1060,10 @@ margin-bottom: 20px;
         line-height: 30px;
         padding: 70px 0;
         text-align: center;
+	     @media screen and (max-width: 480px){
+		  padding: 70px 40px;   
+	     }
+
         div{
 	        	font-size: 20px;
 	        	line-height: 1.75; 
@@ -938,6 +1106,7 @@ footer{
     }
 }
 
+
 /* form styling */
 .popup-holder{
 	h2.form-header{
@@ -962,20 +1131,25 @@ footer{
 	.container{
 		position: relative;
 		height: calc(100vh - 66px);
-		.close-btn{
-			position: absolute;
-			position: absolute;
-			bottom: 40px;
-			left: 0;
-			right: 0;
-			margin: 0 auto;
-			text-align: center;
-		}
 		.close-chart{
 			
 		}
 	}
 }
+
+.close-btn{
+	position: absolute;
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	text-align: center;
+	@media screen and (max-height: 700px){
+		bottom: 20px;
+	}
+}
+
 .form{
 	display: flex;
 	flex-flow: row wrap;

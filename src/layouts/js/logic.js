@@ -28,6 +28,7 @@ document.querySelectorAll('.accordion .data').forEach(data =>{
 document.querySelectorAll('.test-container').forEach(test=>{
     test.querySelector('.right').addEventListener('click',function(){
         test.querySelector('.answer').classList.add('clicked');
+        smoothHeight(test);
         setTimeout(() => {
             test.querySelector('.test').classList.add('yes');            
         }, 800);
@@ -35,12 +36,26 @@ document.querySelectorAll('.test-container').forEach(test=>{
     test.querySelectorAll('.wrong').forEach(wrong=>{
         wrong.addEventListener('click', function(){
             test.querySelector('.answer').classList.add('clicked');
+            smoothHeight(test);
             setTimeout(() => {
                 test.querySelector('.test').classList.add('no');            
             }, 800);
         })
     })
+    test.querySelectorAll('.wrong-2').forEach(wrong2=>{
+        wrong2.addEventListener('click', function(){
+            test.querySelector('.answer').classList.add('clicked');
+            smoothHeight(test);
+            setTimeout(() => {
+                test.querySelector('.test').classList.add('no-2');            
+            }, 800);
+        })
+    })    
 })
+
+function smoothHeight(parent){
+	parent.classList.add('expand');
+}
 
 //chart
 
@@ -68,6 +83,20 @@ document.querySelectorAll('.contact-cta').forEach(contactCTA =>{
         document.querySelector('body').classList.remove('no-scroll');
     });    
 })
+
+//dig deeper chart
+const chart_popup = document.querySelector('.popup-holder.fig-1');
+
+document.querySelector('#open-fig-1').addEventListener('click',function(){
+     chart_popup.classList.add('open');
+     document.querySelector('body').classList.add('no-scroll');
+ });
+ chart_popup.querySelector('.close-chart').addEventListener('click',function(){
+     chart_popup.classList.remove('open');
+     document.querySelector('body').classList.remove('no-scroll');
+ });    
+
+
 
 //form
 function form_submit(){
