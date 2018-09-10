@@ -89,7 +89,7 @@ class Hero extends React.Component {
 								<div className="accordion-container add-slide-up">
 								  <div  className="accordion">
 								      <div className="title">Price</div>
-								      <div className="data">By selecting your solution and the percentage of your load that’s fixed versus index, you can mitigate the impact of price fluctuations</div>
+								      <div className="data">By selecting your solution and the percentage of your load that’s fixed versus index, you can mitigate the impact of price fluctuations.</div>
 								  </div>
 								  <div className="accordion">
 								      <div className="title">Time</div>

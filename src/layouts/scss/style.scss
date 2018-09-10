@@ -410,12 +410,18 @@ li{
             @media screen and (max-height: 700px){
 	            margin: 40px auto 20px;
             }
+            @media screen and (min-height: 1000px){
+	            max-height: 500px;
+            }
         }
         .fig1{
 	     	  margin-top: 40px;
         }
         .fig2{
 	        max-height: 65vh;
+           @media screen and (min-height: 1000px){
+            max-height: 650px;
+         }
         }
         .data{
             color: #888;
@@ -1100,12 +1106,13 @@ footer{
             padding-right: 20px;
             a{
                 text-decoration: underline;
-                font-size: 12px;
+                font-size: 10px;
             }
         }
     }
     .small{
-        font-size: 11px;
+        font-size: 10px;
+        line-height: 1.3;
     }
 }
 

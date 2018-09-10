@@ -187,7 +187,7 @@ document.querySelector('#form-submit').addEventListener('click', function(e){
 	
 	if(validate_form()){
 		console.log('submit validation passed');
-		//form_submit();		
+		form_submit();		
 		thank_you_msg();
 	} else{
 		console.log('submit validation falied');
